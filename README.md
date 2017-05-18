@@ -1,8 +1,8 @@
 # Greyscale Antialiasing extension for VSCode (Mac OSX Only)
 
-This extension is a dirty hack to permit the usage of fonts on OSX (such ProFont) that
+This extension is a dirty hack to permit the usage of fonts on OSX (such as ProFont) that
 benefits from being displayed with greyscale antialiasing, patching the application's
-main css file.
+main CSS file.
 
 Althought this could be done manually, at every VSCode update the changes are lost: this
 extension ensure those changes are re-applied automatically in such cases.

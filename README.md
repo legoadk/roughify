@@ -21,12 +21,12 @@ And Here after the patch is applied.
 
 ## Installation
 
-Downlod the latest extension's vsix package [here](https://github.com/legoadk/slightly-less-roughify/releases/download/v0.0.3/slightly-less-roughify-0.0.3.vsix).
+Downlod the latest extension's vsix package [here](https://github.com/legoadk/slightly-less-roughify/releases/download/v0.0.4/slightly-less-roughify-0.0.4.vsix).
 
 From the terminal, you can install using the following command:
 
 ```
-$ code --install-extension slightly-less-roughify-0.0.3.vsix
+$ code --install-extension slightly-less-roughify-0.0.4.vsix
 ```
 
 ## Requirements
@@ -43,9 +43,14 @@ VSCode is smart enough to recognize that the extension tampered its core files, 
 
 ## Release Notes
 
+### 0.0.4
+
+Updated for newer versions of VS Code, after the path of the workbench.main.css file changed.
+
 ### 0.0.3
+
 Forked from ZER0/roughify, with the intention of making a greyscale-antialiasing variant. Added CSS that will also apply to the Integrated Terminal and to the line numbers in the main editor gutter.
 
 ### 0.0.2
 
-Initial release.
+Initial release as "Roughify".

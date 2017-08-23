@@ -1,11 +1,8 @@
-# Font Rough extension for VSCode (Mac OSX Only)
+# Greyscale Antialiasing extension for VSCode (Mac OSX Only)
 
-DISCLAIMER: The main reason of this extension is due the extreme laziness of
-[Fulvio Venturelli](https://github.com/Fulviuus) - in italian we have a specific term for
-that, it's _PESACULO_.
-
-This extension is a dirty hack to permit the usage of fonts on OSX (such terminus) that
-doesn't need antialiasing, patching the application's main css file.
+This extension is a dirty hack to permit the usage of fonts on OSX (such as ProFont) that
+benefits from being displayed with greyscale antialiasing, patching the application's
+main CSS file.
 
 Althought this could be done manually, at every VSCode update the changes are lost: this
 extension ensure those changes are re-applied automatically in such cases.
@@ -14,7 +11,7 @@ See: [https://github.com/Microsoft/vscode/issues/2577](https://github.com/Micros
 
 ## Features
 
-Here how it looks Terminus with antialiasing (default behavior of VSCode):
+Here how ProFont looks with antialiasing (default behavior of VSCode):
 
 ![Before the patch](images/screenshot-default.png)
 
@@ -24,12 +21,12 @@ And Here after the patch is applied.
 
 ## Installation
 
-Downlod the latest extension's vsix package [here](https://github.com/ZER0/roughify/releases/download/v0.0.2/roughify-0.0.2.vsix).
+Downlod the latest extension's vsix package [here](https://github.com/legoadk/slightly-less-roughify/releases/download/v0.0.4/slightly-less-roughify-0.0.4.vsix).
 
 From the terminal, you can install using the following command:
 
 ```
-$ code --install-extension roughify-0.0.2.vsix
+$ code --install-extension slightly-less-roughify-0.0.4.vsix
 ```
 
 ## Requirements
@@ -46,6 +43,14 @@ VSCode is smart enough to recognize that the extension tampered its core files, 
 
 ## Release Notes
 
+### 0.0.4
+
+Updated for newer versions of VS Code, after the path of the workbench.main.css file changed.
+
+### 0.0.3
+
+Forked from ZER0/roughify, with the intention of making a greyscale-antialiasing variant. Added CSS that will also apply to the Integrated Terminal and to the line numbers in the main editor gutter.
+
 ### 0.0.2
 
-Initial release.
+Initial release as "Roughify".

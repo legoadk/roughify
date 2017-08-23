@@ -1,23 +1,23 @@
 {
-    "name": "roughify",
-    "displayName": "Roughify",
-    "description": "",
-    "version": "0.0.2",
-    "publisher": "zer0",
+    "name": "slightly-less-roughify",
+    "displayName": "Slightly Less Roughify",
+    "description": "Force the editor to use greyscale antialiasing.",
+    "version": "0.0.4",
+    "publisher": "legoadk",
     "license": "MPL-2.0",
     "engines": {
-        "vscode": "^1.10.0"
+        "vscode": "^1.15.0"
     },
     "categories": [
         "Other"
     ],
     "bugs": {
-        "url": "https://github.com/zer0/roughify/issues"
+        "url": "https://github.com/legoadk/slightly-less-roughify/issues"
     },
-    "homepage": "https://github.com/zer0/roughify/blob/master/README.md",
+    "homepage": "https://github.com/legoadk/slightly-less-roughify/blob/master/README.md",
     "repository": {
         "type": "git",
-        "url": "https://github.com/zer0/roughify.git"
+        "url": "https://github.com/legoadk/slightly-less-roughify.git"
     },
     "activationEvents": [
         "*"
@@ -31,10 +31,11 @@
         "test": "node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
+        "@types/mocha": "^2.2.32",
+        "@types/node": "^6.0.87",
         "mocha": "^2.3.3",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
+        "vscode": "^1.1.5",
+        "path": "^0.12.7",
+        "typescript": "^2.4.2"
     }
 }

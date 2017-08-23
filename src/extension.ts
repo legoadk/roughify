@@ -6,13 +6,15 @@ import { access, append, unlink, copy } from './fs';
 import * as path from 'path';
 
 const monkeypatch =`
-  .monaco-editor.mac .view-line { -webkit-font-smoothing: none }
+  .monaco-editor.mac .view-line, .panel.integrated-terminal, div.margin-view-overlays {
+    -webkit-font-smoothing: antialiased;
+  }
   .mtki { font-style: normal !important }
   .mtkb { font-weight: normal !important }
 `;
 
 const main = path.join(process.argv[1],
-              "../vs/workbench/electron-browser/workbench.main.css");
+              "../vs/workbench/workbench.main.css");
 const backup = main + ".backup";
 
 async function isAlreadyPatched() {
